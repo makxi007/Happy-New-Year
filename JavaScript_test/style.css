@@ -2,30 +2,16 @@
 body{
 	display: flex;
 	justify-content: center;
-	flex-flow:column;
-	align-items: center;
-	width:100vw;
-	height:100vh;
+	
+	
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(221,78,34,1) 0%, rgba(0,212,255,1) 100%);
 }
 
-.main_container{
+.days_list{
 	display: flex;
-	justify-content: center;
 	flex-direction: row;
-	align-items: center;
-}
+	margin:50px;
 
-#main_h1{
-	cursor:pointer;
-	color:white;
-	font-size:30px;	
-}
 
-#main_p{
-	cursor:pointer;
-	color:blue;
-	font-size:25px;
-	text-align:center;
 }
