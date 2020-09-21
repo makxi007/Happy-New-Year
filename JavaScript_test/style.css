@@ -28,3 +28,7 @@ body{
 	display: flex;
 	justify-content: center;
 }
+
+#day{
+	display: none;
+}
