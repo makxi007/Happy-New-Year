@@ -1,5 +1,6 @@
 var day_list = document.getElementsByClassName("day_list");
 var day = document.getElementById("day");
+var day_inner = document.getElementsByClassName("day_inner");
 
 var weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
@@ -18,14 +19,12 @@ function handler(event){
 	}
 }
 
+
 function showDay(){
-	for(var i = 0; i < weekdays.length; i++){
-		day.innerHTML = "<p>" + weekdays[i] + "</p>";
-		day.style.display = "flex";
-	}
+	day.style.display = "flex";
 	
+	day.innerHTML = event.target.innerHTML;
 }
 
-function comparison(){
-	
-}
+
+
