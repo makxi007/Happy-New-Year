@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Happy New Year!</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/ffc3fd5982.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<!-- Circles -->
+	<div class="main">
+		<div class="circle red"></div>
+		<div class="circle yellow"></div>
+		<div class="circle green"></div>
+		<div class="circle blue"></div>
+		<div class="circle red"></div>
+		<div class="circle yellow"></div>
+		<div class="circle green"></div>
+		<div class="circle blue"></div>
+	</div>
+	<!-- Title -->
+	<div class="main2">
+		<h1 id="hello_text">Hello my friend =)</h1>
+	</div>
+	<!-- Play Circles Buttons -->
+	<div class="main3">
+		<div class="buttons">
+			<input class="but" id="play_but" type="submit" value="Play" onclick="on()">
+			<input class="but" id="stop_but" type="submit" value="Stop" onclick="off()">
+			<input class="but" id="submit_but" type="submit" value="Glow" onclick="hold()">
+		</div>
+	</div>
+	<!-- Play Music Buttons -->
+	<div class="main4">
+		<div class="audio" id="audio_id">
+			<audio id="audio_play">
+				<source src="music/christmas1.mp3" type="audio/mpeg" id="source">
+			</audio>
+			<div class="audio_buttons">
+				<!-- Prev music buttons -->
+				<i class="fas fa-chevron-circle-left change_buts_icons" onclick="change_prev()"></i>
+				<!--<button class="change_buts" id="prev_but" type="button"><strong><</strong></button>-->
+
+				<!-- Play Music Button-->
+				<button class="in_audio_buttons" id="playMus_but" type="button" onclick="playSound()">Play</button>
+				<!-- Stop Music Button-->
+				<button class="in_audio_buttons" id="stopMus_but" type="button" onclick="stopSound()">Stop</button>
+
+				<!--<button id="id_change_buts" class="change_buts" id="next_but" type="button"><strong>></strong></button>-->
+				<!-- Next music buttons -->
+				<i id="id_change_buts_icon" class="fas fa-chevron-circle-right change_buts_icons" onclick="change_next()"></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
